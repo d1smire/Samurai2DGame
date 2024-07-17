@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407e77933eae5c140948a6d8b50f3a0f, type: 3}
+  m_Name: Wood
+  m_EditorClassIdentifier: 
+  name: Wood
+  icon: {fileID: 21300000, guid: f63dd6f75fde8f847bb94bf488afcc98, type: 3}
+  prefab: {fileID: 3083488524841681669, guid: 19de3df2255342849a5a17f0e28a1a8c, type: 3}
+  description: Wood need for some craft
+  healingPower: 0
+  canUse: 0
+  canWear: 0
+  canDrop: 1
+  isWood: 1
+  isStone: 0
+  isFood: 0
+  isKnife: 0
+  isAxe: 0
+  isPickaxe: 0
+  isKatana: 0
