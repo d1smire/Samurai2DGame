@@ -56,7 +56,7 @@ IEnumerator SendData(WWWForm form, RequestType type)
     }
 }
 ```
-For watching all c# code u can [click here](Assets/Scripts/DataBase/WebManager.cs)
+For watching full c# code u can [click here](Assets/Scripts/DataBase/WebManager.cs)
 #### </br>Second is the php code for add our data to database and get is back to unity here
 ```
 <?php
@@ -117,7 +117,7 @@ else if ($dt['type'] == "register")
     }
 }
 ```
-For watching all php code u can [click here](Assets/PHP&Database/logreg.php)
+For watching full php code u can [click here](Assets/PHP&Database/logreg.php)
 
 ### Developers
 ____
