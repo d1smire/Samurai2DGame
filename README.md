@@ -126,5 +126,5 @@ ____
 ### Game Screnshots
 ____
 <p align="center">
-<img src="Assets/GameScreens/image.png" width="126px">
+<img src="Assets/GameScreens/image.png" width="500px">
 </p>
