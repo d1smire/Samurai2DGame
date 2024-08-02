@@ -56,7 +56,7 @@ IEnumerator SendData(WWWForm form, RequestType type)
     }
 }
 ```
-For watching all php code u can [click here](Assets/Scripts/DataBase/WebManager.cs)
+For watching all c# code u can [click here](Assets/Scripts/DataBase/WebManager.cs)
 #### </br>Second is the php code for add our data to database and get is back to unity here
 ```
 <?php
