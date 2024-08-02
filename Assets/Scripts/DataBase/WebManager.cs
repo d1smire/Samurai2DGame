@@ -184,7 +184,6 @@ public class WebManager : MonoBehaviour
         logging, register, saveProgress, LoadProgress, saveScene, LoadScene, newGame, DelOldScene, saveInventory
     }
     
-    
     public string GetUserData(UsersData data)
     {
         return JsonUtility.ToJson(data);
@@ -384,15 +383,15 @@ public class WebManager : MonoBehaviour
     {
         print(data);
         SceneObjectData[] sceneObjects = JsonConvert.DeserializeObject<SceneObjectData[]>(data);
-        WebManager.sceneObjData = sceneObjects;
-        return WebManager.sceneObjData;
+        sceneObjData = sceneObjects;
+        return sceneObjData;
     }
     public NewGameData[] SetNewSceneData(string data)
     {
         print(data);
         NewGameData[] sceneObjects = JsonConvert.DeserializeObject<NewGameData[]>(data);
-        WebManager.newGameData = sceneObjects;
-        return WebManager.newGameData;
+        newGameData = sceneObjects;
+        return newGameData;
     }
     public void GetSceneObjects(string login, int sceneID)
     {
@@ -400,7 +399,7 @@ public class WebManager : MonoBehaviour
         form.AddField("type", RequestType.LoadScene.ToString());
         form.AddField("login", login);
         form.AddField("SceneID", sceneID.ToString());
-        StartCoroutine(SendSceneObjectsRequest(form, RequestType.LoadScene));
+        StartCoroutine(GetSceneObjectsRequest(form, RequestType.LoadScene));
     }
     public void GetNewSceneObjects(string login, int sceneID)
     {
@@ -408,9 +407,9 @@ public class WebManager : MonoBehaviour
         form.AddField("type", RequestType.newGame.ToString());
         form.AddField("login", login);
         form.AddField("SceneID", sceneID.ToString());
-        StartCoroutine(SendSceneObjectsRequest(form, RequestType.newGame));
+        StartCoroutine(GetSceneObjectsRequest(form, RequestType.newGame));
     }
-    private IEnumerator SendSceneObjectsRequest(WWWForm form, RequestType type)
+    private IEnumerator GetSceneObjectsRequest(WWWForm form, RequestType type)
     {
         using (UnityWebRequest www = UnityWebRequest.Post(targetSceneURL, form))
         {

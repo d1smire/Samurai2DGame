@@ -106,20 +106,24 @@ public class PlayerMovement : MonoBehaviour
             
         }
     }
+
     public void Freze()
     {
         _speed = 0;
     }
+
     public void Move()
     {
         _speed = 20;
     }
+
     private IEnumerator AttakStop() 
     {
         yield return new WaitForSeconds(0.8f);
         _animator.SetBool("Attak", false);
         isAttak = false;
     }
+
     private void FindNearestEnemy()
     {
         Enemy nearestEnemy = null;

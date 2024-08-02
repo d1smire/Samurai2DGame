@@ -84,6 +84,7 @@ public class DataLoader : MonoBehaviour
     {
         obj.transform.position = new Vector3(posX, posY, 0f);
     }
+
     private GameObject GetPrefabByObjectType(string objType)
     {
         switch (objType)

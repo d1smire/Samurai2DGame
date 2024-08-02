@@ -14,13 +14,14 @@ public class Tree : MonoBehaviour
     public GameObject treeLoot;
     private GameObject container;
 
-    void Start()
+    private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         _currentAddedColor = _clearColor;
         player = FindObjectOfType<PlayerMovement>();
         container = GameObject.Find("NotStaticObj");
     }
+
     private void FixedUpdate()
     {
         if (isClear) 
