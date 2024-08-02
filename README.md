@@ -126,5 +126,21 @@ ____
 ### Game Screnshots
 ____
 <p align="center">
-<img src="Assets/GameScreens/image.png" width="500px">
+<img src="Assets/GameScreens/image.png" width="400px">
+<img src="Assets/GameScreens/image2.png" width="400px">
+</p>
+<p align="center">
+<img src="Assets/GameScreens/image3.png" width="400px">
+<img src="Assets/GameScreens/image4.png" width="400px">
+</p>
+<p align="center">
+<img src="Assets/GameScreens/image5.png" width="400px">
+<img src="Assets/GameScreens/image6.png" width="400px">
+</p>
+<p align="center">
+<img src="Assets/GameScreens/image7.png" width="400px">
+<img src="Assets/GameScreens/image8.png" width="400px">
+</p>
+<p align="center">
+<img src="Assets/GameScreens/image9.png" width="400px">
 </p>
