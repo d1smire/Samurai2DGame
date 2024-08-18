@@ -117,7 +117,7 @@ else if ($dt['type'] == "register")
     }
 }
 ```
-For watching full php code u can [click here](Assets/PHP&Database/logreg.php)
+For watching full php code u can [click here](Assets/PHP&DBbackup/logreg.php)
 
 ### Developers
 ____
